@@ -4,7 +4,7 @@
 
 /* Área do Header */
 
-.navbar {
+.navbar, footer {
     background-color: #e15f41;
 }
 
@@ -154,4 +154,79 @@ form {
 
 .whatsapp-button:hover {
     background-color: #128c7e;
+}
+
+/* Área do Footer */
+
+.x-footer-2022 {
+    color: #fff; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilize o menu de links */
+.x-footer-2022__menu {
+    list-style: none; /* Remova os marcadores de lista */
+    text-align: center; /* Centralize os itens horizontalmente */
+}
+
+.x-footer-2022__menu li {
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens do menu */
+    display: inline-block; /* Exiba os itens em linha */
+    margin: 0 10px; /* Espaçamento horizontal entre os itens do menu */
+}
+
+.x-footer-2022__menu a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remova a sublinhado dos links */
+    transition: color 0.3s; /* Adicione uma transição de cor suave */
+}
+
+.x-footer-2022__menu a:hover {
+    color: #00c853; /* Cor dos links ao passar o mouse */
+}
+
+/* Estilize a seção de redes sociais */
+.x-footer-2022__socials ul {
+    list-style: none; /* Remova os marcadores de lista */
+    padding: 0; /* Remova o espaçamento interno */
+    display: flex; /* Exiba os ícones de redes sociais em linha */
+    justify-content: center; /* Centralize os ícones horizontalmente */
+}
+
+.x-footer-2022__socials li {
+    margin: 0 10px; /* Espaçamento entre os ícones de redes sociais */
+}
+
+/* Estilize o texto na parte inferior */
+.x-footer-2022__bottom {
+    background-color: #c9553c;
+    text-align: center; /* Centralize o texto horizontalmente */
+    margin-top: 20px; /* Espaçamento superior entre o texto e o conteúdo acima */
+    padding: 16px 0;
+}
+
+.x-footer-2022__bottom p {
+    font-size: 12px;
+}
+
+.x-footer-2022__right {
+    /* flex: 1; Isso faz com que a div ocupe todo o espaço disponível horizontalmente */
+    text-align: center; /* Centralize o texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralize os elementos verticalmente */
+}
+
+.x-footer-2022__top {
+    display: flex; /* Use flexbox para alinhar as divs horizontalmente */
+    justify-content: space-evenly;
+    padding: 16px 0;
+    font-size: 16px;
+}
+
+.x-footer-2022__left {
+    display: flex;
+    justify-content: flex-end;
+    /* flex: 1; Isso faz com que a div ocupe todo o espaço disponível horizontalmente */
+    align-items: center;
 }
