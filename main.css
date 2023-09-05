@@ -2,6 +2,10 @@
     text-decoration: none;
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* Área do Header */
 
 .navbar, footer {
@@ -141,6 +145,10 @@ form {
     align-items: center;
     padding-bottom: 16px;
     max-width: 360px;
+}
+
+.campo-motivacao {
+    height: 144px;
 }
 
 @media (max-width: 767px) {
@@ -300,3 +308,71 @@ form {
     /* flex: 1; Isso faz com que a div ocupe todo o espaço disponível horizontalmente */
     align-items: center;
 }
+
+/* Estilos para as redes sociais */
+.social-section {
+    margin-top: 20px; /* Espaço superior da seção de redes sociais */
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px; /* Espaço uniforme entre os ícones das redes sociais */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #205186; /* Cor dos ícones */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00c853; /* Cor dos ícones ao passar o mouse */
+}
+
+.img-link-social {
+    height: 80px;
+}
+
+/* Estilos para o endereço */
+.address-section {
+    margin-top: 20px; /* Espaço superior da seção de endereço */
+}
+
+.section-title-top {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    justify-content: space-around
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-title i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Estilos para o texto do endereço */
+.address-text {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+}
+
+
+
