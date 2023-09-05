@@ -5,12 +5,12 @@
 /* Área do Header */
 
 .navbar, footer {
-    background-color: #e15f41;
+    background-color: #205186;
 }
 
 #cabecalho .nav .nav-link.active {
     background-color: #fff;
-    color: #e15f41;
+    color: #205186;
 }
 
 #cabecalho .nav .nav-link,
@@ -31,7 +31,12 @@
 
 button.navbar-toggler,
 .navbar-toggler {
-    background-color: #ffeae6;
+    border-color: transparent;
+}
+
+.icon-branco {
+    color: #fff;
+    font-size: 30px;
 }
 
 /* Área do Carousel */
@@ -46,6 +51,12 @@ button.navbar-toggler,
         height: 280px;
     }
 
+}
+
+/* Área Sobre Nós */
+
+.sobre-nos-mexer {
+    padding-bottom: 15px;
 }
 
 /* Área de Membros */
@@ -77,6 +88,10 @@ button.navbar-toggler,
 
 /* Área do Formulário */
 
+.row-form1 {
+    justify-content: space-evenly;
+}
+
 .button-form {
     width: 100%;
     padding: 8px 0;
@@ -90,6 +105,21 @@ button.navbar-toggler,
     border-radius: 6px;
     margin-top: 16px;
     max-width: 120px;
+}
+
+.button-container {
+    text-align: center; /* Centralize o conteúdo horizontalmente */
+}
+
+@media (max-width: 767px) {
+    .button-container {
+        text-align: center; /* Centralize o conteúdo horizontalmente */
+    }
+
+    .button-form {
+        width: 100%; /* Ocupa todo o espaço disponível na largura do contêiner pai */
+        max-width: none; /* Remova a largura máxima anterior */
+    }
 }
 
 .form-campo {
@@ -158,58 +188,60 @@ form {
 
 /* Área do Footer */
 
-.x-footer-2022 {
+.footer {
     color: #fff; /* Cor do texto */
     font-size: 14px; /* Tamanho da fonte */
 }
 
 /* Estilize o menu de links */
-.x-footer-2022__menu {
+.footer__menu {
     list-style: none; /* Remova os marcadores de lista */
     text-align: center; /* Centralize os itens horizontalmente */
 }
 
-.x-footer-2022__menu li {
+.footer__menu li {
     margin-bottom: 10px; /* Espaçamento inferior entre os itens do menu */
     display: inline-block; /* Exiba os itens em linha */
     margin: 0 10px; /* Espaçamento horizontal entre os itens do menu */
 }
 
-.x-footer-2022__menu a {
+.footer__menu a {
     color: #fff; /* Cor dos links */
     text-decoration: none; /* Remova a sublinhado dos links */
     transition: color 0.3s; /* Adicione uma transição de cor suave */
 }
 
-.x-footer-2022__menu a:hover {
+.footer__menu a:hover {
     color: #00c853; /* Cor dos links ao passar o mouse */
 }
 
 /* Estilize a seção de redes sociais */
-.x-footer-2022__socials ul {
+.footer__socials ul {
     list-style: none; /* Remova os marcadores de lista */
     padding: 0; /* Remova o espaçamento interno */
     display: flex; /* Exiba os ícones de redes sociais em linha */
     justify-content: center; /* Centralize os ícones horizontalmente */
 }
 
-.x-footer-2022__socials li {
+.footer__socials li {
     margin: 0 10px; /* Espaçamento entre os ícones de redes sociais */
 }
 
 /* Estilize o texto na parte inferior */
-.x-footer-2022__bottom {
-    background-color: #c9553c;
+.footer__bottom {
+    background-color: #18406b;
     text-align: center; /* Centralize o texto horizontalmente */
     margin-top: 20px; /* Espaçamento superior entre o texto e o conteúdo acima */
     padding: 16px 0;
 }
 
-.x-footer-2022__bottom p {
+.footer__bottom p {
     font-size: 12px;
+    margin-bottom: 0px;
+    padding: 0 10px;
 }
 
-.x-footer-2022__right {
+.footer__right {
     /* flex: 1; Isso faz com que a div ocupe todo o espaço disponível horizontalmente */
     text-align: center; /* Centralize o texto horizontalmente */
     display: flex;
@@ -217,14 +249,52 @@ form {
     align-items: center; /* Centralize os elementos verticalmente */
 }
 
-.x-footer-2022__top {
+.footer__top {
     display: flex; /* Use flexbox para alinhar as divs horizontalmente */
+    flex-direction: row-reverse;
     justify-content: space-evenly;
     padding: 16px 0;
     font-size: 16px;
 }
 
-.x-footer-2022__left {
+@media (max-width: 767px) {
+    .footer__top {
+        display: block;
+    }
+
+    .footer__menu {
+        display: contents;
+        padding-left: 0px;
+    }
+
+    .footer__left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+    .footer__left li {
+        margin-top: 10px;
+    }
+
+    .footer__bottom {
+        margin-top: 0px;
+    }
+
+    .footer__right {
+        border-bottom: 1px solid #fff;
+        margin: 0 10%;
+    }
+}
+
+.footer__left > * {
+    flex: calc(50% - 10px); /* 50% - margem entre os itens */
+    margin-right: 20px; /* Espaçamento entre os itens */
+    margin-bottom: 20px; /* Espaçamento abaixo dos itens */
+    box-sizing: border-box; /* Evita que a margem adicione à largura total */
+}
+
+.footer__left {
     display: flex;
     justify-content: flex-end;
     /* flex: 1; Isso faz com que a div ocupe todo o espaço disponível horizontalmente */
