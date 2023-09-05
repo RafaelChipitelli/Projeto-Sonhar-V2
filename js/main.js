@@ -1,9 +1,9 @@
 // Área do Formulário ----------------------------------------------------------------
 
 $(document).ready(function() {
-    $('#telefone').mask('(00) 00000-0000')
-    $('#CPF').mask('000.000.000-00')
-    $('#CEP').mask('00000-000')
+    $('#telefone').mask('(00) 00000-0000');
+    $('#CPF').mask('000.000.000-00');
+    $('#CEP').mask('00000-000');
 
     $('form').validate({
         rules: {
@@ -26,6 +26,9 @@ $(document).ready(function() {
             CEP: {
                 required: true
             },
+            motivacao: {
+                required: true
+            },
         },
         messages: {
             nome: 'Por favor, insira o seu Nome.',
@@ -33,11 +36,12 @@ $(document).ready(function() {
             telefone: 'Por favor, insira o seu Telefone',
             email: 'Por favor, insira o seu E-mail',
             endereço: 'Por favor, insira o seu Endereço',
-            CEP: 'Por favor, insira o seu CEP'
+            CEP: 'Por favor, insira o seu CEP',
+            motivacao: 'Queremos saber mais sobre você!',
         },
     });
 
-    const handleSubimit = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
 
         if ($('form').valid()) { // Verifica se o formulário é válido
@@ -47,6 +51,7 @@ $(document).ready(function() {
             const email = document.querySelector('input[name=email]').value;
             const endereço = document.querySelector('input[name=endereço]').value;
             const CEP = document.querySelector('input[name=CEP]').value;
+            const motivacao = document.querySelector('textarea[name=motivacao]').value; // Corrigido para pegar o valor da textarea
 
             const dataHoraEnvio = new Date();
             const dataFormatada = `${dataHoraEnvio.getDate().toString().padStart(2, '0')}/${(dataHoraEnvio.getMonth() + 1).toString().padStart(2, '0')}/${dataHoraEnvio.getFullYear()}`;
@@ -57,7 +62,7 @@ $(document).ready(function() {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ nome, CPF, telefone, email, endereço, CEP, dataEnvio: dataFormatada }),
+                body: JSON.stringify({ nome, CPF, telefone, email, endereço, CEP, motivacao, dataEnvio: dataFormatada }),
             }).then(() => {
                 document.getElementById('nome').value = '';
                 document.getElementById('CPF').value = '';
@@ -65,13 +70,14 @@ $(document).ready(function() {
                 document.getElementById('email').value = '';
                 document.getElementById('endereço').value = '';
                 document.getElementById('CEP').value = '';
+                document.getElementById('motivacao').value = '';
 
                 window.open('https://www.youtube.com/watch?v=jfKfPfyJRdk', '_blank');
             });
         }
     }
 
-    document.querySelector('form').addEventListener('submit', handleSubimit);
+    document.querySelector('form').addEventListener('submit', handleSubmit);
 });
 
 // Área de Membros ----------------------------------------------------------------
@@ -98,7 +104,7 @@ const members = [
 // Função para criar a estrutura HTML de um membro
 function createMemberHTML(member) {
     return `
-        <div class=" col-md-4 mb-4">
+        <div class="col-md-4 mb-4">
             <div class="card">
                 <img src="${member.photo}" class="rounded-circle mx-auto d-block" alt="${member.name}" />
                 <div class="card-body">
