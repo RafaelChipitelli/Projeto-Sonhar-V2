@@ -23,8 +23,12 @@
     color: #fff;
 }
 
-.navbar-brand {
+.navbar-brand span {
     font-family: Roboto, sans-serif;
+}
+
+.navbar-brand img {
+    background-image: './images/newlogo.png';
 }
 
 .navbar-brand a {
