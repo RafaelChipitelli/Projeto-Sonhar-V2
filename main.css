@@ -375,4 +375,8 @@ form {
 }
 
 
-
+@media (max-width: 767px) { 
+    .row > h3.section-title {
+        justify-content: center;
+    }
+}
