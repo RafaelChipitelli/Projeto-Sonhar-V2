@@ -84,14 +84,14 @@ $(document).ready(function() {
 
 const members = [
     {
-        name: "Fulano da Silva",
+        name: "Marcos Lopes",
         role: "Fundador",
-        photo: "https://images.pexels.com/photos/6626882/pexels-photo-6626882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        photo: "https://media.licdn.com/dms/image/C4E03AQE_C8kc0RPgMA/profile-displayphoto-shrink_400_400/0/1575224500211?e=1699488000&v=beta&t=Fd2Dq1A7-8yWC4OTlJJ_jlTj7FEP5mPJtBAhQfdBpAo"
     },
     {
-        name: "Ciclana Rodrigues",
-        role: "Comunicação",
-        photo: "https://images.pexels.com/photos/5615665/pexels-photo-5615665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        name: "Alex Sandro",
+        role: "Fundador",
+        photo: "../images/AlexSandro.png"
     },
     {
         name: "Beltrano Oliveira",

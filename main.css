@@ -50,9 +50,11 @@ button.navbar-toggler,
 /* Área do Carousel */
 
 .carousel-inner img {
-    height: auto;
+    height: 800px;
     max-width: 100%;
+    object-fit: cover;
 }
+
 
 @media screen and (max-width: 767px) {
     .carousel-item img {
@@ -65,6 +67,15 @@ button.navbar-toggler,
 
 .sobre-nos-mexer {
     padding-bottom: 15px;
+}
+
+/* Área dos Projetos */
+
+.col-md-4--projeto img {
+    height: 275px;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 2%;
 }
 
 /* Área de Membros */
