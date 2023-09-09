@@ -395,3 +395,16 @@ form {
         justify-content: center;
     }
 }
+
+/* Área Doações */
+
+.doeEAjude {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.doeEAjude img {
+    justify-content: center;
+}
