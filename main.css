@@ -50,7 +50,7 @@ button.navbar-toggler,
 /* Área do Carousel */
 
 .carousel-inner img {
-    height: 800px;
+    height: 750px;
     max-width: 100%;
     object-fit: cover;
 }
