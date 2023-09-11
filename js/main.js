@@ -56,7 +56,7 @@ $(document).ready(function() {
             const dataHoraEnvio = new Date();
             const dataFormatada = `${dataHoraEnvio.getDate().toString().padStart(2, '0')}/${(dataHoraEnvio.getMonth() + 1).toString().padStart(2, '0')}/${dataHoraEnvio.getFullYear()}`;
 
-            fetch('https://api.sheetmonkey.io/form/qSExyZ8Uk1mPPjNdyJEq3N', {
+            fetch('https://api.sheetmonkey.io/form/mubCj3WEhYMrdyDocafBDA', {
                 method: 'post',
                 headers: {
                     'Accept': 'application/json',
@@ -72,7 +72,7 @@ $(document).ready(function() {
                 document.getElementById('CEP').value = '';
                 document.getElementById('motivacao').value = '';
 
-                window.open('https://www.youtube.com/watch?v=jfKfPfyJRdk', '_blank');
+                window.open('https://www.instagram.com/institutoprojetosonhar/', '_blank');
             });
         }
     }
