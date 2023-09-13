@@ -69,6 +69,55 @@ button.navbar-toggler,
     padding-bottom: 15px;
 }
 
+.container-status {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.container-cont {
+    width: 18em;
+    height: 18em;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.image-cont {
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+}
+
+span.num {
+    color: #000000;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
+        .container-status .wrapper-cont {
+        display: flex;
+          flex-direction: column; /* Empilha os elementos verticalmente */
+          align-items: center; /* Alinha os elementos horizontalmente ao centro */
+        }
+        
+        .container-cont {
+          width: 100%; /* Define a largura para ocupar 100% da largura disponível */
+          max-width: 300px; /* Define uma largura máxima para evitar que os elementos fiquem muito largos */
+          margin-bottom: 20px; /* Espaçamento entre os elementos */
+        }
+    }
+}
+
 /* Área dos Projetos */
 
 .col-md-4--projeto img {
