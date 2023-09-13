@@ -127,3 +127,53 @@ function renderMembers() {
 
 // Chame a função para carregar os membros
 renderMembers();
+
+// Animação Crescente dos Numeros
+// Função para verificar se o elemento está visível na tela
+function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
+// Função para animar o contador quando ele está visível
+function animateVisibleCounters() {
+    const counters = document.querySelectorAll('.count');
+    
+    counters.forEach((countElement) => {
+        if (isElementInViewport(countElement) && !countElement.hasAttribute("data-animated")) {
+            animateCounter(countElement, 1000); // Chama a função de animação para cada contador visível
+            countElement.setAttribute("data-animated", "true"); // Marca o elemento como animado
+        }
+    });
+}
+
+// Função para animar um contador individual
+function animateCounter(countElement, duration) {
+    const targetValue = parseInt(countElement.getAttribute("data-target"), 10);
+    let currentValue = 0;
+    const startTime = performance.now();
+
+    function updateCounter(timestamp) {
+        const elapsedTime = timestamp - startTime;
+        if (elapsedTime < duration) {
+            const progress = elapsedTime / duration;
+            currentValue = Math.floor(progress * targetValue);
+            countElement.innerText = currentValue;
+            requestAnimationFrame(updateCounter);
+        } else {
+            currentValue = targetValue;
+            countElement.innerText = currentValue;
+        }
+    }
+
+    requestAnimationFrame(updateCounter);
+}
+
+// Adicione um ouvinte de evento "scroll" para chamar a função quando a página é rolada
+window.addEventListener("scroll", animateVisibleCounters);
+
+// Chame a função uma vez para verificar os contadores visíveis ao carregar a página
+animateVisibleCounters();
