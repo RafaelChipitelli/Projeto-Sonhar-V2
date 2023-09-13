@@ -262,6 +262,7 @@ form {
     font-size: 12px;
     margin-bottom: 0px;
     padding: 0 10px;
+    text-align: center;
 }
 
 .footer__right {
@@ -409,4 +410,32 @@ form {
     justify-content: center;
     height: 300px;
     border: 1px solid #11111151;
+}
+
+/* Área Mobile */
+
+@media screen and (max-width: 767px) {
+    .testando-mobile {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-mobile {
+        max-width: 80%;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+p {
+    margin: 0px;
+    margin-bottom: 0px !important;
+    padding: 5%;
+    text-align: justify;
+    line-height: 1.6;
 }

@@ -109,7 +109,7 @@ function createMemberHTML(member) {
                 <img src="${member.photo}" class="rounded-circle mx-auto d-block" alt="${member.name}" />
                 <div class="card-body">
                     <h5 class="card-title">${member.name}</h5>
-                    <p class="card-text">${member.role}</p>
+                    <span class="card-text">${member.role}</span>
                 </div>
             </div>
         </div>
