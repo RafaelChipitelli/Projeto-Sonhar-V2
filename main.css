@@ -105,9 +105,9 @@ span.num {
 @media screen and (max-width: 767px) {
     @media screen and (max-width: 768px) {
         .container-status .wrapper-cont {
-        display: flex;
-          flex-direction: column; /* Empilha os elementos verticalmente */
-          align-items: center; /* Alinha os elementos horizontalmente ao centro */
+            display: flex;
+            flex-direction: column; /* Empilha os elementos verticalmente */
+            align-items: center; /* Alinha os elementos horizontalmente ao centro */
         }
         
         .container-cont {
@@ -115,6 +115,23 @@ span.num {
           max-width: 300px; /* Define uma largura máxima para evitar que os elementos fiquem muito largos */
           margin-bottom: 20px; /* Espaçamento entre os elementos */
         }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .width1399 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h2width1399 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .h2width1399 > span {
+        margin-left: 10px;
     }
 }
 
