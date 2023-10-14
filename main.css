@@ -118,6 +118,10 @@ span.num {
     }
 }
 
+.h2width1399 {
+    margin-left: 27px;
+}
+
 @media screen and (max-width: 1000px) {
     .width1399 {
         display: flex;
