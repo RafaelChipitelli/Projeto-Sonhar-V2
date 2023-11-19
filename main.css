@@ -90,6 +90,11 @@ button.navbar-toggler,
     align-items: center;
 }
 
+.container-cont p {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+
 .image-cont {
     height: 150px;
     width: 150px;
@@ -138,6 +143,29 @@ span.num {
         margin-left: 10px;
     }
 }
+
+/* Área do Video do YT */
+
+#video-yt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Para evitar problemas de sobreposição */
+}
+
+#video-yt iframe {
+    width: 1120px;
+    height: 630px;
+}
+
+@media (max-width: 767px) {
+    #video-yt iframe {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
 
 /* Área dos Projetos */
 

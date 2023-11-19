@@ -86,7 +86,7 @@ const members = [
     {
         name: "Marcos Lopes",
         role: "Fundador",
-        photo: "https://media.licdn.com/dms/image/C4E03AQE_C8kc0RPgMA/profile-displayphoto-shrink_400_400/0/1575224500211?e=1699488000&v=beta&t=Fd2Dq1A7-8yWC4OTlJJ_jlTj7FEP5mPJtBAhQfdBpAo"
+        photo: "../images/marcos-lopes.jfif"
     },
     {
         name: "Alex Sandro",
