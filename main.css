@@ -160,8 +160,8 @@ span.num {
 
 @media (max-width: 767px) {
     #video-yt iframe {
-        width: 300px;
-        height: 200px;
+        width: 360px;
+        height: 205px;
     }
 }
 
