@@ -147,6 +147,7 @@ span.num {
 /* Área do Video do YT */
 
 #video-yt {
+    padding-top: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,6 +160,10 @@ span.num {
 }
 
 @media (max-width: 767px) {
+    #video-yt {
+        padding-top: 0px;
+    }
+
     #video-yt iframe {
         width: 360px;
         height: 205px;
