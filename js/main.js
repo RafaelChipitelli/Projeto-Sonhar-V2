@@ -93,18 +93,18 @@ const members = [
         role: "Fundador",
         photo: "../images/AlexSandro.png"
     },
-    {
-        name: "Beltrano Oliveira",
-        role: "Financeiro",
-        photo: "https://images.pexels.com/photos/7654096/pexels-photo-7654096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
+    // {
+    //     name: "Beltrano Oliveira",
+    //     role: "Financeiro",
+    //     photo: "https://images.pexels.com/photos/7654096/pexels-photo-7654096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    // },
     // Adicione mais membros aqui
 ];
 
 // Função para criar a estrutura HTML de um membro
 function createMemberHTML(member) {
     return `
-        <div class="col-md-4 mb-4">
+        <div class="col-md-6 mb-4">
             <div class="card">
                 <img src="${member.photo}" class="rounded-circle mx-auto d-block" alt="${member.name}" />
                 <div class="card-body">
